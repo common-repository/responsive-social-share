@@ -1,0 +1,122 @@
+/*
+ * Responsive Social Share - Share Links Styles
+ */
+
+/*
+ * Import Modules
+ */
+@import "misc/variables";
+@import "fonts/zocial";
+@import "misc/mixins";
+@import "../../../../../assets/sass/misc/mixins";
+
+/*
+ * Social Color Variables 
+ */
+@import "../../../../../assets/sass/misc/social-colors";
+
+/*
+ * Add Common Styles
+ */
+
+/*
+ * General
+ */
+.ksharelinks {
+        margin-bottom: 20px;
+}
+.ksharelinks *:before,
+.ksharelinks *:after {
+        @include box-sizing();
+}
+.ksharelinks:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+/*
+ * Sizes
+ */
+.ksharelinks.xsmall {
+        font-size: $xsmall;
+}
+.ksharelinks.xsmall .klink .kicon {
+        font-size: $xsmall + 1px;
+}
+.ksharelinks.small {
+        font-size: $small;
+}
+.ksharelinks.small .klink .kicon {
+        font-size: $small + 1px;
+}
+.ksharelinks.medium {
+        font-size: $medium;
+}
+.ksharelinks.medium .klink .kicon {
+        font-size: $medium + 1px;
+}
+.ksharelinks.large {
+        font-size: $large;
+}
+.ksharelinks.large .klink .kicon {
+        font-size: $large + 2px;
+}
+.ksharelinks.xlarge {
+        font-size: $xlarge;
+}
+.ksharelinks.xlarge .klink .kicon {
+        font-size: $xlarge + 2px;
+}
+
+/*
+ * Floating Bar
+ */
+
+.kfloating {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        z-index: 150;
+}
+.kfloating .ksharelinks {
+        padding: 0;
+        margin-bottom: 0;
+}
+.kfloating .kintro {
+        display: none;
+}
+.kfloating .ksharelinks ul {
+        text-align: center;
+}
+.kfloating .ksharelinks ul li {
+        clear: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        margin: 0.6em 0;
+}
+.kfloating .ksharelinks .kname {
+        display: none;
+}
+.kfloating .ksharelinks .kcount {
+        display: none;
+}
+
+/*
+ * Include all Themes
+ */
+
+/*
+ * Import Plain Theme
+ */
+@import "themes/plain";
+
+/*
+ * Import Gradient Theme
+ */
+@import "themes/gradient";
